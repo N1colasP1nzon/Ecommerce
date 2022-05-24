@@ -9,6 +9,9 @@
     height:200px;
 }
 .lista-producto Button{
-    background-color: rgb(247, 124, 36);
+    background-color: rgb(108, 32, 207);
     padding: 10px;
+}
+.cantidad button{
+    background-color:white;
 }

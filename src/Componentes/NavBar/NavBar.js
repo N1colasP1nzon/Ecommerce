@@ -3,24 +3,35 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
+import CartWidget from '../CardWidger/CardWidger';
 //import IconButton from '@mui/material/IconButton';
 import './NavBar.css';
 
 
 const NavBar = () => {
     return (
-        <div className="navbar" >
+        <div className="menuinicial" >
         <Box sx={{ flexGrow: 1 }}>
         <AppBar position="static">
             <Toolbar>
             <div className='logoMenu'>
                 <img src="./Login.jpeg"/>
             </div>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            <Typography variant="h6" component="div" sx={{ flexGrow: 3 }}>
                 SDG Friendly
             </Typography>
-            <Button color="inherit">Ingresar</Button>
+            <ul>
+                <li>
+                    <button>Home</button>
+                </li>
+                <li>
+                    <button>Nuestras Frutas y Verduras</button>
+                </li>
+                <li>
+                    <button>Nosotros</button>   
+                </li>
+            </ul>
+            <CartWidget/>
             </Toolbar>
         </AppBar>
         </Box>

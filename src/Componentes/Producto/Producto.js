@@ -1,12 +1,17 @@
-//productos cards
 import './Producto.css'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { Button } from '@mui/material';
+import { useState } from 'react';
 
-//Functional Component
 const Producto = ({ image, title, price }) => {
-    // console.log("Propiedades de Card: ")
+    const[count,setCount] = useState (0)
+    const addCount = () => {
+        setCount(count + 1)
+    }
+    const restCount = () => {
+        setCount(count - 1)
+    }
     return(
         <Card sx={{ minWidth: 275 }}>
             <CardContent>
@@ -17,7 +22,11 @@ const Producto = ({ image, title, price }) => {
                     <strong>{title}</strong>
                     <br></br>
                     <strong>$ {price}</strong>
-                    <br></br>
+                    <div className='cantidad'>
+                        <Button onClick={restCount}>-</Button>
+                        <strong>{count}</strong>
+                        <Button onClick={addCount} >+</Button>
+                    </div>
                     <Button variant={'contained'} >Mas info</Button>
                 </div>
             </CardContent>

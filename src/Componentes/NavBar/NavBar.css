@@ -1,14 +1,15 @@
 .logoMenu {
-        width: 50px;
+        width: 45px;
+        margin: 10px;
 }
 .logoMenu img {
     width: 100%;
 }
-.menuinicial{
-    padding: 5px; 
-    text-align: center;
-}
 .menuinicial li{
         display: inline-block;
         margin: 2px;
+        text-align: center;
+}
+.menuinicial ul{
+    width: 80%;
 }
