@@ -6,14 +6,17 @@ const ItemListContainer = ({title}) => {
         <>
         <h2>{title}</h2>
         <Grid container>
-            <Grid item md={4}>
-                <Producto title={"Maiz economico"} price={500} image={"./imagenes/maiz.jpg"}/>
+            <Grid item md={3}>
+                <Producto title={"Maiz"} price={500} image={"./imagenes/maiz.jpg"} stock={2}/>
             </Grid>
-            <Grid item md={4}>
-                <Producto title={"Papa para el bolsillo"} price={200} image={"./imagenes/papas.jpg"}/>
+            <Grid item md={3}>
+                <Producto title={"Papa"} price={200} image={"./imagenes/papas.jpg"} stock={3}/>
             </Grid>
-            <Grid item md={4}>
-                <Producto title={"lechuga bien economica"} price={80} image={"./imagenes/lechuga.jpg "}/>
+            <Grid item md={3}>
+                <Producto title={"Lechuga"} price={150} image={"./imagenes/lechuga.jpg"} stock={5}/>
+            </Grid>
+            <Grid item md={3}>
+                <Producto title={"Frutilla"} price={400} image={"./imagenes/frutilla.jpg"} stock={10}/>
             </Grid>
         </Grid>
         </>
