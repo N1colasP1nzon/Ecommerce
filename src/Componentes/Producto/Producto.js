@@ -46,7 +46,7 @@ const Producto = ({ image, title, price, stock }) => {
                             <p>{count}</p>
                             <Button onClick={addCount}>+</Button>
                         </div>
-                        <Button variant={'contained'} color='secondary'>Comprar</Button>
+                        <Button variant={'contained'} color='warning'>Agregar al carrito</Button>
                     </div>
                 </div>
             </CardContent>

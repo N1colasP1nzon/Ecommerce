@@ -25,3 +25,18 @@
     max-height: 25px;
     width: 5%;
 }
+.ProductoDetallado{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    border-left: 1px solid;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    padding: 20px;
+    width:500px; 
+}
+.ProductoDetallado img{
+    width:500px; 
+    height:500px;
+}
